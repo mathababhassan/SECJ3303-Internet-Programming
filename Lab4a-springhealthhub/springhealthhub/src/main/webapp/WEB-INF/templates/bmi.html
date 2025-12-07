@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Result</title>
+</head>
+<body>
+
+<h2 th:text="'Hello, ' + ${person.name} + '!'">Hello, User!</h2>
+
+<p>Your BMI is:
+    <span th:text="${person.bmi}">0.0</span>
+</p>
+
+<p>Category:
+    <span th:text="${person.category}">Normal</span>
+</p>
+
+</body>
+</html>
